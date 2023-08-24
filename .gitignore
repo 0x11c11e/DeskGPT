@@ -1,0 +1,24 @@
+# Node dependencies
+node_modules/
+npm-debug.log
+
+# Electron build directories
+dist/
+out/
+release/
+
+# OS-specific files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+*.swp             # Vim
+*.swo             # Vim
+*.idea/           # IntelliJ IDEA
+
+# Editor directories
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.sublime-*
