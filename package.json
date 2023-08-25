@@ -1,16 +1,78 @@
 {
   "name": "deskgpt",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "A desktop client for OpenAI's ChatGPT.",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "OpenAI",
+    "ChatGPT",
+    "Electron",
+    "desktop",
+    "client",
+    "AI",
+    "chatbot",
+    "GPT",
+    "wrapper",
+    "GUI"
+  ],  
+  "author": {
+    "name": "Iman Reihanian",
+    "email": "ireihani@uci.edu"
+  },
   "license": "ISC",
+  "build": {
+    "appId": "com.iman.deskgpt",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg"
+      ],
+      "icon": "img/robot-icon.icns"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "img/robot-icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "img/robot-icon.png"
+    },
+    "files": [
+      "src/main.js"
+    ]
+  },
   "devDependencies": {
-    "electron": "^26.1.0"
+    "electron": "^26.1.0",
+    "electron-builder": "^22.14.13",
+    "electron-packager": "^17.1.2"
   }
 }
