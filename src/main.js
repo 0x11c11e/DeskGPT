@@ -31,6 +31,7 @@ let mainWindow
  */
 function createWindow() {
   mainWindow = new BrowserWindow({
+    title: 'DeskGPT',
     width: 1200,
     height: 800,
     webPreferences: {
