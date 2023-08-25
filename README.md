@@ -1,6 +1,7 @@
 # DeskGPT - OpenAI Chat Client
 
-![DeskGPT Logo](https://github.com/0x11c11e/DeskGPT/blob/main/img/robot-icon.png)
+<img src="https://github.com/0x11c11e/DeskGPT/blob/main/img/robot-icon.png" alt="DeskGPT Logo" width="256" height="256">
+
 
 DeskGPT offers a seamless desktop experience for OpenAI's ChatGPT. Whether you're on Linux, Windows, or MacOS, DeskGPT is designed to provide direct and efficient access to ChatGPT without the need of a browser.
 
